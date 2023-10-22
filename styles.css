@@ -1,0 +1,41 @@
+body{
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+.wrapper{
+    padding: 32px;
+}
+
+.cookie-container{
+    position: fixed;
+    bottom: -100%; /* make it go away until class is ACTIVE */
+    left: 0;
+    right: 0;
+    background: #2f3640;
+    color: #f5f6fa;
+    padding: 0 32px;
+ 
+    /* save document to simulate visual effect in action */
+    transition-duration: 2s;
+
+    box-shadow: 0 -2px 16px  rgba(47, 54, 64, 0.141);
+}
+
+.cookie-container.active{
+    bottom: 80px;
+}
+
+.cookie-container a{
+    color: #f5f6fa;
+}
+
+.cookie-btn{
+    background-color: #e84881;
+    border: 0;
+    color: #f5f6fa;
+    padding: 12px 48px;
+    font-size: 18px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
